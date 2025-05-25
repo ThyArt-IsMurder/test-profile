@@ -1,4 +1,4 @@
-### Hi, I'm Barry! 👋
+### Hi, I'm Afshin! 👋
 
 ### Welcome to my <img src="https://img.icons8.com/color/96/000000/github--v1.png" height="24"/> GitHub Profile
 
@@ -36,16 +36,14 @@
 
 ## 🌎 Find me
 
-[![icons8-gmail-48](https://user-images.githubusercontent.com/74541595/179397245-37cdb849-4283-4f70-956c-f2e739e44401.png)](mailto:arta.shahin.02@gmail.com)
-[![icons8-GitLab-48](https://img.icons8.com/color/48/null/gitlab.png)](https://gitlab.com/bardiafa)
+[![icons8-gmail-48](https://user-images.githubusercontent.com/74541595/179397245-37cdb849-4283-4f70-956c-f2e739e44401.png)](mailto:afshinataee@proton.me)
+[![icons8-GitLab-48](https://img.icons8.com/color/48/null/gitlab.png)](https://gitlab.com)
 
-## Introducing Bardiafa 🙋‍♂️
+## Introducing 🙋‍♂️
 
-👋 Hey there! I'm a Senior Software Engineer with 6 years of experience, a Senior Product Manager, and a company Scrum Master. I'm also well-versed in HTML and CSS and UI/UX with a rating of 9/10, and a 4/10 in Python. 💻
+👋 Hey there! I'm a hobbyist with many years of experienceI'm also well-versed in HTML and CSS and UI/UX with a rating of 9/10, and a 4/10 in Python. 💻
 
 I believe in the power of hard work and never giving up also having vision, and I apply that mindset every day with my amazing team at Mizegerd.tech. 🤝 We're not any other digital marketing agency - we go above and beyond to provide top-notch services to our clients.
-
-🔒 With my expertise in Software Engineering, I know how to build a software product and keep UI/UX perfect. 💪
 
 💡 But to me, nothing is impossible. I'm always eager to learn new skills and tackle new challenges. So let's collaborate and see what we can achieve together! 🚀
 🌟 Want to know more? Why not discover it by yourself? 😉👌
