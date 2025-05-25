@@ -30,7 +30,7 @@
 ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=Cloudflare&logoColor=white)
 ![VS Code](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=flat-square&logo=visual%20studio%20code&logoColor=white)
 
-![GitHub stats](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=barry-far&theme=cobalt2&show_icons=true&card_width=495px)
+![GitHub stats](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=thyart&theme=cobalt2&show_icons=true&card_width=495px)
 ![Streak stats](https://github-readme-streak-stats.herokuapp.com/?user=barry-far&show_icons=true&theme=tokyonight)  
 
 
