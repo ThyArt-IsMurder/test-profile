@@ -7,7 +7,8 @@
     "servers": [
       {
         "tag": "proxy-dns",
-        "address": "tls://8.8.8.8"
+        "address": "tls://8.8.8.8",
+        "detour": "Proxy"
       },
       {
         "tag": "direct-dns",
@@ -15,7 +16,17 @@
         "detour": "direct"
       }
     ],
-    "strategy": "prefer_ipv4"
+    "strategy": "prefer_ipv4",
+    "rules": [
+      {
+        "outbound": "any",
+        "server": "proxy-dns"
+      },
+      {
+        "outbound": ["direct"],
+        "server": "direct-dns"
+      }
+    ]
   },
   "inbounds": [
     {
@@ -72,6 +83,10 @@
     {
       "type": "direct",
       "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
     },
     {
       "type": "vless",
@@ -188,6 +203,10 @@
     "auto_detect_interface": true,
     "final": "Proxy",
     "rules": [
+      {
+        "protocol": "dns",
+        "outbound": "direct"
+      },
       {
         "ip_is_private": true,
         "outbound": "direct"
