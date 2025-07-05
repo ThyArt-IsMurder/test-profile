@@ -1,90 +1,127 @@
-mode: Global
-port: 7890
-proxies:
-  - name: '🚀 Swift VLESS'
-    type: vless
-    server: 85.93.8.142
-    port: 11003
-    uuid: b707c7ea-ecb2-4879-ffd7-d064d1cf5e5b
-    network: httpupgrade
-    tls: true
-    servername: gallery.sourceforge.net
-    flow: xtls-rprx-vision
-    skip-cert-verify: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: cT2LpCh0dCr4jmoG6N2pDi8Pf8wxZZ4MFU-yDiVT_zI
-    ip-version: dual
-    udp: true
-  - name: '🌪️ Turbo Hysteria2'
-    type: hysteria2
-    server: 104.234.74.23
-    port: 11002
-    tls: false
-    password: KjsgRJjdA8
-    obfs: salamander
-    obfs-password: KevinZakarian
-    skip-cert-verify: true
-    fast-open: false
-    ip-version: dual
-  - name: '🛡️ Secure Hysteria2'
-    type: hysteria2
-    server: 141.11.62.217
-    port: 11003
-    tls: false
-    password: 5UNkH2Qx0g
-    obfs: salamander
-    obfs-password: KevinZakarian
-    skip-cert-verify: true
-    fast-open: false
-    ip-version: dual
-  - name: '⚡️ Lightning VLESS'
-    type: vless
-    server: 104.234.74.23
-    port: 11003
-    uuid: bf52c08f-67a4-43a9-8de0-5ca5ada06dde
-    network: httpupgrade
-    tls: true
-    servername: gallery.sourceforge.net
-    flow: xtls-rprx-vision
-    skip-cert-verify: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: R_zZS27sEP3wbCa7qX7jV0CcLiv1sAL_i_snquX-MAA
-    ip-version: dual
-    udp: true
-  - name: '🦊 Sly Hysteria2'
-    type: hysteria2
-    server: 178.236.254.188
-    port: 11003
-    tls: false
-    password: o2leW7NHVC
-    obfs: salamander
-    obfs-password: KevinZakarian
-    skip-cert-verify: true
-    fast-open: false
-    ip-version: dual
-  - name: '💎 Crystal Hysteria2'
-    type: hysteria2
-    server: 185.141.216.99
-    port: 11003
-    tls: false
-    password: C5dxQFLc30
-    obfs: salamander
-    obfs-password: KevinZakarian
-    skip-cert-verify: true
-    fast-open: false
-    ip-version: dual
-rules: []
-proxy-groups:
-  - name: ♻️ Automatic
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    proxies:
-      - '🚀 Swift VLESS'
-      - '🌪️ Turbo Hysteria2'
-      - '🛡️ Secure Hysteria2'
-      - '⚡️ Lightning VLESS'
-      - '🦊 Sly Hysteria2'
-      - '💎 Crystal Hysteria2'
+{
+  "log": {
+    "level": "info"
+  },
+  "inbounds": [
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "127.0.0.1",
+      "listen_port": 7890
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🚀 Swift VLESS",
+      "server": "85.93.8.142",
+      "server_port": 11003,
+      "uuid": "b707c7ea-ecb2-4879-ffd7-d064d1cf5e5b",
+      "network": "httpupgrade",
+      "tls": {
+        "enabled": true,
+        "server_name": "gallery.sourceforge.net",
+        "insecure": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "cT2LpCh0dCr4jmoG6N2pDi8Pf8wxZZ4MFU-yDiVT_zI",
+          "short_id": ""
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🌪️ Turbo Hysteria2",
+      "server": "104.234.74.23",
+      "server_port": 11002,
+      "password": "KjsgRJjdA8",
+      "obfs": {
+        "type": "salamander",
+        "password": "KevinZakarian"
+      },
+      "tls": {
+        "enabled": false,
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🛡️ Secure Hysteria2",
+      "server": "141.11.62.217",
+      "server_port": 11003,
+      "password": "5UNkH2Qx0g",
+      "obfs": {
+        "type": "salamander",
+        "password": "KevinZakarian"
+      },
+      "tls": {
+        "enabled": false,
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "⚡️ Lightning VLESS",
+      "server": "104.234.74.23",
+      "server_port": 11003,
+      "uuid": "bf52c08f-67a4-43a9-8de0-5ca5ada06dde",
+      "network": "httpupgrade",
+      "tls": {
+        "enabled": true,
+        "server_name": "gallery.sourceforge.net",
+        "insecure": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "R_zZS27sEP3wbCa7qX7jV0CcLiv1sAL_i_snquX-MAA",
+          "short_id": ""
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🦊 Sly Hysteria2",
+      "server": "178.236.254.188",
+      "server_port": 11003,
+      "password": "o2leW7NHVC",
+      "obfs": {
+        "type": "salamander",
+        "password": "KevinZakarian"
+      },
+      "tls": {
+        "enabled": false,
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "💎 Crystal Hysteria2",
+      "server": "185.141.216.99",
+      "server_port": 11003,
+      "password": "C5dxQFLc30",
+      "obfs": {
+        "type": "salamander",
+        "password": "KevinZakarian"
+      },
+      "tls": {
+        "enabled": false,
+        "insecure": true
+      }
+    },
+    {
+      "tag": "auto",
+      "type": "urltest",
+      "outbounds": [
+        "🚀 Swift VLESS",
+        "🌪️ Turbo Hysteria2",
+        "🛡️ Secure Hysteria2",
+        "⚡️ Lightning VLESS",
+        "🦊 Sly Hysteria2",
+        "💎 Crystal Hysteria2"
+      ],
+      "url": "http://www.gstatic.com/generate_204",
+      "interval": "5m"
+    }
+  ]
+}
