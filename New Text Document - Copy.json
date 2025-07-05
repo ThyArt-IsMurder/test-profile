@@ -1,0 +1,91 @@
+mode: Global
+port: 7890
+proxies:
+proxies:
+  - name: Dynamic -1
+    type: vless
+    server: 85.93.8.142
+    port: 11003
+    uuid: b707c7ea-ecb2-4879-ffd7-d064d1cf5e5b
+    network: httpupgrade
+    tls: true
+    servername: gallery.sourceforge.net
+    flow: xtls-rprx-vision
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: cT2LpCh0dCr4jmoG6N2pDi8Pf8wxZZ4MFU-yDiVT_zI
+    ip-version: dual
+    udp: true
+  - name: Dynamic -2
+    type: hysteria2
+    server: 104.234.74.23
+    port: 11002
+    tls: false
+    password: KjsgRJjdA8
+    obfs: salamander
+    obfs-password: KevinZakarian
+    skip-cert-verify: true
+    fast-open: false
+    ip-version: dual
+  - name: Dynamic -3
+    type: hysteria2
+    server: 141.11.62.217
+    port: 11003
+    tls: false
+    password: 5UNkH2Qx0g
+    obfs: salamander
+    obfs-password: KevinZakarian
+    skip-cert-verify: true
+    fast-open: false
+    ip-version: dual
+  - name: Dynamic -4
+    type: vless
+    server: 104.234.74.23
+    port: 11003
+    uuid: bf52c08f-67a4-43a9-8de0-5ca5ada06dde
+    network: httpupgrade
+    tls: true
+    servername: gallery.sourceforge.net
+    flow: xtls-rprx-vision
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: R_zZS27sEP3wbCa7qX7jV0CcLiv1sAL_i_snquX-MAA
+    ip-version: dual
+    udp: true
+  - name: Dynamic -5
+    type: hysteria2
+    server: 178.236.254.188
+    port: 11003
+    tls: false
+    password: o2leW7NHVC
+    obfs: salamander
+    obfs-password: KevinZakarian
+    skip-cert-verify: true
+    fast-open: false
+    ip-version: dual
+  - name: Dynamic -6
+    type: hysteria2
+    server: 185.141.216.99
+    port: 11003
+    tls: false
+    password: C5dxQFLc30
+    obfs: salamander
+    obfs-password: KevinZakarian
+    skip-cert-verify: true
+    fast-open: false
+    ip-version: dual
+rules: []
+proxy-groups:
+- name: ♻️ Automatic
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - Dynamic -1
+  - Dynamic -2
+  - Dynamic -3
+  - Dynamic -4
+  - Dynamic -5
+  - Dynamic -6
